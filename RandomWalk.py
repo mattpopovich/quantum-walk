@@ -5,16 +5,28 @@
 import random
 random.seed()
 # set walkers' number
-nWalker=1000
+nWalker=5
 
 # set total walking time
-totalTime=2000
+totalTime=20
+
+# set system tab length
+tabLength=8
+
+# constant for printing the grid or not
+printGrid=True
 
 # set initial condition: time=0; all walker are at position 0
 position=[0 for i in range(nWalker)]
 
+# print grid labels
+if(printGrid):
+    print('Time\t|\tWalkers')
+    print('-' * tabLength * (nWalker + 2))
+
 # do simulation
 for time in range(0,totalTime):
+    if printGrid : print(str(time) + '\t|\t',end='')
     for walker in range(0,nWalker):
         step=random.choice([-1,1])
         position[walker]+=step
