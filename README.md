@@ -5,7 +5,7 @@ for learning quantum walk
 
 ##Programs
 - RandomWalk.py  
-  A python program to simulate claasical random walks on a line.
+  A python program to simulate classical random walks on a line.
 
 ##Abbreviations
 - DTQW: discrete-time quantum walks
